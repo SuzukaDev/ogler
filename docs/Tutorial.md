@@ -79,7 +79,7 @@ What if we wanted to make it possible for the user to specify and automate the m
 ```glsl
 OGLER_PARAMS {
     float mix_proportion;
-}
+};
 ```
 
 and then changing the last row in our main function to
@@ -93,7 +93,7 @@ The shader should now look like this:
 ```glsl
 OGLER_PARAMS {
     float mix_proportion;
-}
+};
 
 void mainImage(out vec4 fragColor, in vec2 fragCoords) {
     vec2 uv = fragCoords / iResolution;
